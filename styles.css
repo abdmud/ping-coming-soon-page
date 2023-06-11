@@ -56,3 +56,19 @@ button{
     cursor: pointer;
     border: none;
 }
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+}
+
+i {
+    border: 1px solid var(--veryDarkBlue);
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+}
