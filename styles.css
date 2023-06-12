@@ -86,3 +86,7 @@ i::before {
     justify-content: center;
     margin-top: 20%;
 }
+
+.copyright{
+    color: var(--gray);
+}
