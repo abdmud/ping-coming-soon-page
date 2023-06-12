@@ -4,6 +4,7 @@ const emailInput = document.querySelector("input");
 function checkEmail() {
     var eMail = emailInput.value;
     const emailDiv = document.querySelector(".signup");
+
     if (eMail != "" && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(eMail)) {
 
         return true;
@@ -20,6 +21,12 @@ function checkEmail() {
         msg.style.fontSize = "12px";
         msg.style.fontStyle = "italic"
         msg.style.marginLeft = "5%"
+
+        if (window.innerWidth < 700) {
+            a = emailDiv.append(msg)
+            a.insertBefore(msg, null);
+            notifyBtn.style.marginTop = "5%"
+        }
 
         return false;
     }
