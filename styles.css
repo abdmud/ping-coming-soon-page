@@ -86,7 +86,11 @@ i::before {
     justify-content: center;
     margin-top: 20%;
 }
-
+i:hover {
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+}
 .copyright{
     color: var(--gray);
 }
