@@ -94,3 +94,28 @@ i:hover {
 .copyright{
     color: var(--gray);
 }
+
+@media only screen and (max-width: 700px) {
+    .signup {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+    button {
+        width: 360px;
+        margin-top: 4%;
+    }
+    .dashboard {
+        width: 400px;
+        height: 250px;
+    }
+    .fa-brands {
+        height: 40px;
+        border-radius: 20px;
+    }
+    i::before {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30%;
+    }
+}
